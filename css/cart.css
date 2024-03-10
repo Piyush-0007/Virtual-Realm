@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-button{
+    max-height: 100px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background : rgba(0, 0, 0, 0.679);
+}
+body{
+    background-color: rgba(248,249,250,0.5);
+}
+#logo{
+    width: 200px;
+}
+.checkout{
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin:1rem 0;
+}
+.cart{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width : 80vw;
+    height: 100vh;
+    margin: auto;
+}
+.order-summary{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+    padding: 2rem;
+    min-height: 400px;
+    height: fit-content;
+}
+.payment-summary{
+    min-width: 300px;
+    height: fit-content;
+    margin-left: 1rem;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    border: 1px  solid rgba(0, 0, 0, 0.313);
+    border-width: 0 0 1px 0;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.item>img{
+    margin-right: 1rem;;
+    width: 250px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-detail > p{
+    font-size: medium;
+    font-weight: normal;
+    margin: 8px 0;
+}
+.remove{
+    color : rgb(197, 6, 6);
+    font-size: large;
+    margin-top: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.remove:hover{
+    color: red;
+}
+.platforms{
+    font-size: 26px;
+    margin-top: 1.5rem;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.border-bottom{
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.313)  ;
+}
+.grand-total{
+    margin-top: 1rem;
+}
+.rupee{
+    background-color: transparent;
+    color: black;;
+}

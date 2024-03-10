@@ -1,0 +1,89 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../images/ezgif-1-54dab0f2c1.gif");
+    background-size: cover; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 120vh;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+.back{
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.563);
+    max-width: 70%;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5%;
+    padding: 0;
+}
+.side-img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.side-img > img{
+    max-height: 70%;
+    width: auto;
+}
+.login{
+   padding:15px;
+   border-radius: 15px 0 0 15px ;
+   background-color: rgb(255, 255, 255);
+
+}
+.credentials{
+    width:100%;
+    text-align: center;
+}
+#submit{
+    color:whitesmoke;
+    background-color: purple;
+    border: 0.5px solid 5px rgb(111, 0, 255);
+    font-weight: bold;
+    padding:2%;
+    width:100%;  
+    margin:0 auto 0 auto;
+
+}
+.login #submit:hover{
+    background-color: rgb(78, 10, 118);
+    font-weight: bold;
+ }
+.un label{
+    font-weight: bold;
+
+}
+.un input{
+    margin-top: 3%;
+    margin-bottom: 8%;
+    width:100%;
+    padding:3%;
+    border-radius:10px;
+
+}
+form ul{
+    list-style: none;
+    padding-left: 0.5rem;
+}
+form .error{
+    border: 1px solid #00000088; 
+    border-radius:9px;
+    background-color:rgba(237, 190, 190, 0.337);
+    box-shadow:1px 1px 5px rgba(0, 0, 0, 0.504); 
+    color : rgba(0, 0, 0, 0.753);
+}

@@ -1,0 +1,100 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to bottom, #000, #191919);
+    overflow-x: hidden !important;
+}
+::-webkit-scrollbar {
+    background: inherit; width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), green);
+}
+::-moz-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), green);
+}
+.bottom {
+    display: absolute;
+}
+.carousel-item {
+    -webkit-mask-image: linear-gradient(#000, #000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    mask-image: linear-gradient(#000, #000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    width: 100%;
+    height: 88vh !important;
+}
+.products {
+    margin-top: -4rem;
+}
+footer {
+    color: white;
+    background-color: #272727c8;
+}
+.text-white {
+    color: white !important;
+}
+.link-white:hover {
+    color: #c00000 !important;
+}
+.fix {
+    color: black;
+    text-decoration: none !important;
+    display: inline;
+}
+.card {
+    transition: all 0.5s;
+    position: relative;
+    width: 18rem;
+}
+.card:hover {
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    z-index: 1;
+}
+.added {
+    color: green;
+    margin-left: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.hide {
+    opacity: 0;
+    height: 0;
+    margin: 0; padding: 0;
+    overflow: hidden;
+}
+.search-bar {
+    position: relative;
+    transition: all 0.4s;
+}
+.dropdown-search {
+    position: absolute;
+    z-index: 1;
+}
+.mydropdown-menu {
+    max-height: 220px !important;
+    width: 287px;
+    overflow-x: hidden;
+}
+.search-img {
+    width: 75px;
+    border-radius: 5px;
+}
+.scroll-up {
+    padding: 0.5rem;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    position: fixed;
+    right: 0.5rem;
+    bottom: 1rem;
+    border-radius: 1.25px;
+    font-size: 1.25rem;
+    transition: all 0.4s;
+    transform: translateY(1000%);
+}
+.scroll-up:hover {
+    transform: translateY(-0.5rem);
+}

@@ -1,0 +1,113 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace 
+    ;
+    background-image: linear-gradient(to right,#108dc7, #ef8e38);
+    /* background-image: url("../images/home_header_bg_rainy_english.gif"); */
+    background-image: url("../images/ezgif-1-54dab0f2c1.gif");
+    /* background-size: cover; */
+    background-position: center top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 120vh;
+    
+}
+.back{
+    display: flex;
+    /* min-height:100vh; */
+    justify-content: center;
+    /* align-items: center; */
+    /* margin:-5vh; */
+    
+    
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.563);
+
+    /* display: grid;
+    grid-template-columns:1fr 1fr; */
+    gap:5%;
+    color:white;
+    text-shadow: 1px 1px 4px black;
+    padding: 15px;
+
+}
+.login{
+    margin:10px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+.detail label{
+    margin: 8px 0px 5px 5px;
+}
+.inp{
+    padding:10px;
+    border-radius: 10px;
+    /* margin-bottom:8px; */
+}
+#submit{
+    /* margin: 10px 0px 6px 0px; */
+    margin:0px auto 5px auto;;
+    width:50%;
+    padding:7px;
+    background-color: #158dc4;
+    /* box-sizing: border-box; */
+    border-width: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    color:white;
+}
+
+.error{
+    border:1px solid rgb(60, 0, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    font-size: small;
+    margin:10px;
+    /* background-color: black; */
+    /* border-color: transparent; */
+    /* border-width: 0px; */
+}
+
+/* .loginWithSocial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:15px;
+    font-size: x-large;
+}
+.google{
+    background-color: #1e3050;
+    padding:10px;
+    border-radius: 25px;
+    margin:1%;
+    text-align: center;
+    padding-top:5%;
+    
+}
+.loginWithSocial i{
+    float: left;
+}
+.loginWithSocial p{
+    text-align: center;
+} */
+
+.google{
+    background-color: #1e3050;
+    text-align: center;
+    width: 50%;
+    margin:auto;
+    border-radius: 20px;
+    padding-top:7px;
+}
+p.msg{
+    color:black !important;
+}
